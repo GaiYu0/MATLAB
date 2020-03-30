@@ -22,9 +22,3 @@ function Kp = gain(F, G, H, P, Q, R, S, n)
         P = F * P * F.' + G * Q * G.' - Kp{i} * Re * Kp{i}.'
     end
 end
-
-F = [-0.1, -0.09, 0.648;
-     1, 0, 0;
-     0, 1, 0]
-G = eye(3)
-H = [1, 0, 0]
